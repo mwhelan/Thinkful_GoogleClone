@@ -1,51 +1,74 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <title>Document</title>
-    <link rel="stylesheet" type="text\css" href="main.css">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <title>Google</title>
 </head>
+
 <body>
-	
-    <header>
-    	<div id="nav">
-		    <ul id="footerLinks">
-		    	<li><a href="#">+You</a></li>
-		    	<li><a href="#">Gmail</a></li>
-		    	<li><a href="#">Images</a></li>
-		    </ul>  
-			<img src="images\grid.png" alt="Google apps"/>	
-    		<button id="signin" value="Sign in"></button>
-    	</div>
-    </header>
 
-    <div id="main">
-	    <div id="logo">
-	    	<img src="images\google-logo.png" alt="Google"/>	
-	    </div>
+<div id="view">
+    <section id="top">
+        <nav>
+            <ul>
+                <li><a href="#">+You</a></li>
+                <li><a href="#">Gmail</a></li>
+                <li><a href="#">Images</a></li>
+                <li><img src="images/grid.png" class="grid" /></li>
+                <li class="button" style="color: white;"><a href="#">Sign in</a></li>
+            </ul>
+        </nav>
+    </section>
 
-		<form action="#">
-			
-			<input type="text" name="query" id="query">
-			<div id="inputs">	
-				<input class="searchButton" type="submit" name="search" value="Google Search">
-				<input class="searchButton" type="submit" name="lucky" value="I'm Feeling Lucky">
-			</div>
-		</form>
-	</div> <!-- end of main -->
+    <section id="logo">
+        <header>
+            <img src="images/google-logo.png" />
+        </header>
+    </section>
 
+    <section id="search">
+        <form action="#" method="GET">
+            <fieldset>
+                <legend>Query</legend>
+                <label for="query">Query</label>
+                <input type="text" name="query" id="query" />
+            </fieldset>
+            <fieldset>
+                <legend>Submit</legend>
+                <input type="submit" name="search" id="search" value="Google Search" />
+                <input type="submit" name="lucky" id="lucky" value="I'm Feeling Lucky" />
+            </fieldset>
+        </form>
+    </section>
+
+    <section id="note">
+        <span class="link"><a href="#">Share a special moment</a></span> with your Valentine today.
+    </section>
+</div>
+
+<section id="bottom">
     <footer>
-	    <ul id="footerLinks">
-	    	<li><a href="#">Advertising</a></li>
-	    	<li><a href="#">Business</a></li>
-	    	<li><a href="#">About</a></li>
-	    </ul>   	
-
-	    <ul id="footerAppLinks">
-	    	<li><a href="#"><span class="important">Updated</span> Privacy & Terms</a></li>
-	    	<li><a href="#">Settings</a></li>
-	    </ul> 
+        <div class="left">
+            <nav>
+                <ul>
+                    <li><a href="#">Advertising</a></li>
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="right">
+            <nav>
+                <ul>
+                    <li><a href="#">Privacy &amp; Terms</a></li>
+                    <li><a href="#">Settings</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="clear"></div>
     </footer>
-    
+</section>
+
 </body>
 </html>
